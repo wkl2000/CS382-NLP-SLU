@@ -18,10 +18,12 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--device', type=int, default=-1, help='Use which device: -1 -> cpu ; the index of gpu o.w.')
     arg_parser.add_argument('--testing', action='store_true', help='training or evaluation mode')
 
+
+    arg_parser.add_argument('--eval_interval', default=10, type=int, help='number of intervals to evaluate')
     arg_parser.add_argument('--restore', action='store_true', help='restore training if a checkpoint exists.')
     arg_parser.add_argument('--checkpoint_interval', default=10, type=int, help='number of intervals to save a checkpoint')
     arg_parser.add_argument('--checkpoint_dir', default='./scripts/checkpoint.bin', help='path of checkpoint of model')
-    arg_parser.add_argument('--model_dir', default='./scripts/model.bin', help='path of best model')
+    arg_parser.add_argument('--best_model_dir', default='./scripts/model.bin', help='path of best model')
     
     #### Training Hyperparams ####
     arg_parser.add_argument('--batch_size', default=32, type=int, help='Batch size')
