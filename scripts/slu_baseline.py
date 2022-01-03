@@ -52,7 +52,7 @@ def evaluate(model, dataset, device, args):
 
 def train(model, train_dataset, dev_dataset, device, args):
     optimizer = set_optimizer(model, args)
-    nsamples, best_result = len(train_dataset), {'dev_acc': 0., 'dev_f1': 0.}
+    nsamples, best_result = len(train_dataset), {'iter':0, 'dev_loss': 100.0, 'dev_acc': 0., 'dev_f1': 0.}
     train_index, step_size = np.arange(nsamples), args.batch_size
     start_epoch = 0
 
@@ -116,13 +116,28 @@ if __name__ == "__main__":
     print("Random seed is set to %d" % (args.seed))
     print("Use GPU with index %s" % (args.device) if args.device >= 0 else "Use CPU as target torch device")
 
-    # load dataset and preprocessing
+    # load configuration
     start_time = time.time()
     train_path = os.path.join(args.dataroot, 'train.json')
     dev_path = os.path.join(args.dataroot, 'development.json')
-    Example.configuration(args.dataroot, train_path=train_path, word2vec_path=args.word2vec_path)
-    train_dataset = Example.load_dataset(train_path)
-    dev_dataset = Example.load_dataset(dev_path)
+    ontology_path = os.path.join(args.dataroot, 'ontology.json')
+    word2vec_path = args.word2vec_path
+    if args.trainset_spoken_language_select == "both":
+        args.trainset_spoken_language_select = ['asr_1best', 'manual_transcript']
+    if args.trainset_augmentation:
+        aug_path = os.path.join(args.dataroot, 'augmentation.json')
+        train_path = [train_path, aug_path]
+    else:
+        train_path = train_path
+    Example.configuration(  vocab_path=train_path, 
+                            ontology_path=ontology_path, 
+                            word2vec_path=word2vec_path,
+                            spoken_language_select=args.trainset_spoken_language_select)
+    
+    # load dataset and preprocessing
+    # train_dataset = Example.load_dataset(train_path)
+    train_dataset = Example.load_dataset(train_path, spoken_language_select=args.trainset_spoken_language_select)
+    dev_dataset = Example.load_dataset(dev_path, spoken_language_select='asr_1best')
     print("Load dataset and database finished, cost %.4fs ..." % (time.time() - start_time))
     print("Dataset size: train -> %d ; dev -> %d" % (len(train_dataset), len(dev_dataset)))
 

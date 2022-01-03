@@ -1,3 +1,7 @@
+# SJTU CS382 SLU
+本项目为上海交通大学 CS382 NLP 课程的课程大作业三：口语语义理解任务(SLU)  
+本小组成员为：张泽熙、丁立、吴凯龙
+
 ### 创建环境
 
     conda create -n slu python=3.6
@@ -9,9 +13,11 @@
 在根目录下运行
 
     python scripts/slu_baseline.py
-    python scripts/slu_baseline.py --max_epoch 10 --device 3
-    python scripts/slu_baseline.py --restore --max_epoch 10 --device 3
-    python scripts/slu_baseline.py --testing
+    python scripts/slu_baseline.py --max_epoch 10 --device 3    # 训练模型，最大 epoch 数为 10，使用 3 号 GPU 卡
+    python scripts/slu_baseline.py --restore --max_epoch 10 --device 3    # 训练模型，如果存在 checkpoint 则恢复训练
+    python scripts/slu_baseline.py --testing --device 3   # 测试训练模型，使用 3 号 GPU 卡
+    python scripts/slu_baseline.py --max_epoch 10 --device 3 --trainset_spoken_language_select both   # 同时使用有噪声和无噪声的数据进行训练
+    python scripts/slu_baseline.py --max_epoch 10 --device 3 --trainset_spoken_language_select both --trainset_augmentation   # 同时使用有噪声和无噪声的数据以及 lexicon 增强的数据进行训练,
 
 ### 代码说明
 
