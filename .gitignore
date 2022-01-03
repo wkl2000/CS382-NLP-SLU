@@ -1,3 +1,4 @@
 word2vec-768.txt
 log
 scripts/*.bin
+*/__pycache__
