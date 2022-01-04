@@ -36,7 +36,9 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--encoder_cell', default='LSTM', choices=['LSTM', 'GRU', 'RNN'], help='root of data')
     arg_parser.add_argument('--dropout', type=float, default=0.2, help='feature dropout rate')
     arg_parser.add_argument('--embed_size', default=768, type=int, help='Size of word embeddings')
-    arg_parser.add_argument('--hidden_size', default=512, type=int, help='hidden size')
-    arg_parser.add_argument('--num_layer', default=2, type=int, help='number of layer')
+    arg_parser.add_argument('--rnn_hidden_size', default=512, type=int, help='hidden size for rnn')
+    arg_parser.add_argument('--rnn_num_layers', default=2, type=int, help='number of layer for rnn')
+    arg_parser.add_argument('--mlp_hidden_size', default=256, type=int, help='hidden size for mlp')
+    arg_parser.add_argument('--mlp_num_layers', default=1, type=int, help='number of layer for mlp')
     
     return arg_parser

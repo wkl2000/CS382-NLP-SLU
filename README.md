@@ -17,7 +17,9 @@
     python scripts/slu_baseline.py --restore --max_epoch 10 --device 3    # 训练模型，如果存在 checkpoint 则恢复训练
     python scripts/slu_baseline.py --testing --device 3   # 测试训练模型，使用 3 号 GPU 卡
     python scripts/slu_baseline.py --max_epoch 10 --device 3 --trainset_spoken_language_select both   # 同时使用有噪声和无噪声的数据进行训练
-    python scripts/slu_baseline.py --max_epoch 10 --device 3 --trainset_spoken_language_select both --trainset_augmentation   # 同时使用有噪声和无噪声的数据以及 lexicon 增强的数据进行训练,
+    python scripts/slu_baseline.py --max_epoch 10 --device 3 --trainset_spoken_language_select both --trainset_augmentation   # 同时使用有噪声和无噪声的数据以及 lexicon 增强的数据进行训练
+    python scripts/slu_baseline.py --max_epoch 10 --device 3 --trainset_spoken_language_select both --trainset_augmentation --encoder_cell GRU  # 使用 GRU 作为 RNN 的 cell/block
+    python scripts/slu_baseline.py --max_epoch 10 --device 3 --trainset_spoken_language_select both --trainset_augmentation --encoder_cell GRU --mlp_num_layers 2   # 设置 MLP 的层数为 2
 
 ### 代码说明
 
