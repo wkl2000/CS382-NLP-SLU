@@ -10,10 +10,12 @@ class SLUTagging(nn.Module):
         super(SLUTagging, self).__init__()
         self.config = config
         self.cell = config.encoder_cell
+            # config.encoder_cell in ['LSTM', 'GRU', 'RNN']
         self.word_embed = nn.Embedding(config.vocab_size, config.embed_size, padding_idx=0)
-        self.rnn = getattr(nn, self.cell)(config.embed_size, config.hidden_size // 2, num_layers=config.num_layer, bidirectional=True, batch_first=True)
+        self.rnn = getattr(nn, self.cell)(config.embed_size, config.rnn_hidden_size // 2, num_layers=config.rnn_num_layers, bidirectional=True, batch_first=True)
+            # self.rnn in ['LSTM', 'GRU', 'RNN']
         self.dropout_layer = nn.Dropout(p=config.dropout)
-        self.output_layer = TaggingFNNDecoder(config.hidden_size, config.num_tags, config.tag_pad_idx)
+        self.output_layer = TaggingFNNDecoder(config.rnn_hidden_size, config.num_tags, config.tag_pad_idx, num_layers=config.mlp_num_layers, hidden_size=config.mlp_hidden_size)
 
     def forward(self, batch):
         tag_ids = batch.tag_ids
@@ -62,6 +64,7 @@ class SLUTagging(nn.Module):
         return predictions, labels, loss.cpu().item()
 
 
+"""
 class TaggingFNNDecoder(nn.Module):
 
     def __init__(self, input_size, num_tags, pad_id):
@@ -69,9 +72,40 @@ class TaggingFNNDecoder(nn.Module):
         self.num_tags = num_tags
         self.output_layer = nn.Linear(input_size, num_tags)
         self.loss_fct = nn.CrossEntropyLoss(ignore_index=pad_id)
-
+    
     def forward(self, hiddens, mask, labels=None):
         logits = self.output_layer(hiddens)
+        logits += (1 - mask).unsqueeze(-1).repeat(1, 1, self.num_tags) * -1e32
+        prob = torch.softmax(logits, dim=-1)
+        if labels is not None:
+            loss = self.loss_fct(logits.view(-1, logits.shape[-1]), labels.view(-1))
+            return prob, loss
+        return prob
+"""
+
+
+class TaggingFNNDecoder(nn.Module):
+
+    def __init__(self, input_size, num_tags, pad_id, num_layers=1, hidden_size=256):
+        super(TaggingFNNDecoder, self).__init__()
+        self.num_tags = num_tags
+        
+        self.linear_layers = nn.ModuleList()
+
+        if num_layers >= 2:
+            self.linear_layers.append(nn.Linear(input_size, hidden_size))   # input layer
+            for _ in range(1, num_layers):
+                self.linear_layers.append(nn.Linear(hidden_size, hidden_size))   # hidden layer
+            self.linear_layers.append(nn.Linear(hidden_size, num_tags))   # output layer
+        else:
+            self.linear_layers.append(nn.Linear(input_size, num_tags))   # output layer
+
+        self.loss_fct = nn.CrossEntropyLoss(ignore_index=pad_id)
+    
+    def forward(self, hiddens, mask, labels=None):
+        logits = hiddens
+        for _, layer in enumerate(self.linear_layers):
+            logits = layer(logits)
         logits += (1 - mask).unsqueeze(-1).repeat(1, 1, self.num_tags) * -1e32
         prob = torch.softmax(logits, dim=-1)
         if labels is not None:

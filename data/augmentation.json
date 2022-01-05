@@ -1,0 +1,2606 @@
+[
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "附近",
+            "asr_1best": "附近",
+            "semantic": [
+                [
+                    "inform",
+                    "请求类型",
+                    "附近"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "定位",
+            "asr_1best": "定位",
+            "semantic": [
+                [
+                    "inform",
+                    "请求类型",
+                    "定位"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "近郊",
+            "asr_1best": "近郊",
+            "semantic": [
+                [
+                    "inform",
+                    "请求类型",
+                    "近郊"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "旁边",
+            "asr_1best": "旁边",
+            "semantic": [
+                [
+                    "inform",
+                    "请求类型",
+                    "旁边"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "周边",
+            "asr_1best": "周边",
+            "semantic": [
+                [
+                    "inform",
+                    "请求类型",
+                    "周边"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "就近",
+            "asr_1best": "就近",
+            "semantic": [
+                [
+                    "inform",
+                    "请求类型",
+                    "就近"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "最近",
+            "asr_1best": "最近",
+            "semantic": [
+                [
+                    "inform",
+                    "请求类型",
+                    "最近"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "公交车",
+            "asr_1best": "公交车",
+            "semantic": [
+                [
+                    "inform",
+                    "出行方式",
+                    "公交车"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "最近",
+            "asr_1best": "最近",
+            "semantic": [
+                [
+                    "inform",
+                    "路线偏好",
+                    "最近"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "高速优先",
+            "asr_1best": "高速优先",
+            "semantic": [
+                [
+                    "inform",
+                    "路线偏好",
+                    "高速优先"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "走国道",
+            "asr_1best": "走国道",
+            "semantic": [
+                [
+                    "inform",
+                    "路线偏好",
+                    "走国道"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "少走高速",
+            "asr_1best": "少走高速",
+            "semantic": [
+                [
+                    "inform",
+                    "路线偏好",
+                    "少走高速"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "不走高速",
+            "asr_1best": "不走高速",
+            "semantic": [
+                [
+                    "inform",
+                    "路线偏好",
+                    "不走高速"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "走高速",
+            "asr_1best": "走高速",
+            "semantic": [
+                [
+                    "inform",
+                    "路线偏好",
+                    "走高速"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "上高速",
+            "asr_1best": "上高速",
+            "semantic": [
+                [
+                    "inform",
+                    "路线偏好",
+                    "上高速"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "高速公路",
+            "asr_1best": "高速公路",
+            "semantic": [
+                [
+                    "inform",
+                    "路线偏好",
+                    "高速公路"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "最快",
+            "asr_1best": "最快",
+            "semantic": [
+                [
+                    "inform",
+                    "路线偏好",
+                    "最快"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "躲避拥堵",
+            "asr_1best": "躲避拥堵",
+            "semantic": [
+                [
+                    "inform",
+                    "路线偏好",
+                    "躲避拥堵"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "语音",
+            "asr_1best": "语音",
+            "semantic": [
+                [
+                    "inform",
+                    "对象",
+                    "语音"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "高德地图",
+            "asr_1best": "高德地图",
+            "semantic": [
+                [
+                    "inform",
+                    "对象",
+                    "高德地图"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "路线",
+            "asr_1best": "路线",
+            "semantic": [
+                [
+                    "inform",
+                    "对象",
+                    "路线"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "位置",
+            "asr_1best": "位置",
+            "semantic": [
+                [
+                    "inform",
+                    "对象",
+                    "位置"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "途经点",
+            "asr_1best": "途经点",
+            "semantic": [
+                [
+                    "inform",
+                    "对象",
+                    "途经点"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "全程路线",
+            "asr_1best": "全程路线",
+            "semantic": [
+                [
+                    "inform",
+                    "对象",
+                    "全程路线"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "简易导航",
+            "asr_1best": "简易导航",
+            "semantic": [
+                [
+                    "inform",
+                    "对象",
+                    "简易导航"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "目的地",
+            "asr_1best": "目的地",
+            "semantic": [
+                [
+                    "inform",
+                    "对象",
+                    "目的地"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "地图",
+            "asr_1best": "地图",
+            "semantic": [
+                [
+                    "inform",
+                    "对象",
+                    "地图"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "定位",
+            "asr_1best": "定位",
+            "semantic": [
+                [
+                    "inform",
+                    "对象",
+                    "定位"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "路况",
+            "asr_1best": "路况",
+            "semantic": [
+                [
+                    "inform",
+                    "对象",
+                    "路况"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "导航",
+            "asr_1best": "导航",
+            "semantic": [
+                [
+                    "inform",
+                    "对象",
+                    "导航"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "撤",
+            "asr_1best": "撤",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "撤"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "保持导航",
+            "asr_1best": "保持导航",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "保持导航"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查",
+            "asr_1best": "查",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "查"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "停止",
+            "asr_1best": "停止",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "停止"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "查找",
+            "asr_1best": "查找",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "查找"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "继续导航",
+            "asr_1best": "继续导航",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "继续导航"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "开始导航",
+            "asr_1best": "开始导航",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "开始导航"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "结束",
+            "asr_1best": "结束",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "结束"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "关掉",
+            "asr_1best": "关掉",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "关掉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "定位",
+            "asr_1best": "定位",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "定位"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "打开",
+            "asr_1best": "打开",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "打开"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "设",
+            "asr_1best": "设",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "设"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "升级",
+            "asr_1best": "升级",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "升级"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "导",
+            "asr_1best": "导",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "导"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "退掉",
+            "asr_1best": "退掉",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "退掉"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "找",
+            "asr_1best": "找",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "找"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "寻找",
+            "asr_1best": "寻找",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "寻找"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "搜",
+            "asr_1best": "搜",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "搜"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "添加",
+            "asr_1best": "添加",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "添加"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "恢复导航",
+            "asr_1best": "恢复导航",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "恢复导航"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "导航开始",
+            "asr_1best": "导航开始",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "导航开始"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "退出",
+            "asr_1best": "退出",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "退出"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "开",
+            "asr_1best": "开",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "开"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "看",
+            "asr_1best": "看",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "看"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "删除",
+            "asr_1best": "删除",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "删除"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "关",
+            "asr_1best": "关",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "关"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "连接",
+            "asr_1best": "连接",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "连接"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "停",
+            "asr_1best": "停",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "停"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "显示",
+            "asr_1best": "显示",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "显示"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "重新搜索",
+            "asr_1best": "重新搜索",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "重新搜索"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "闭",
+            "asr_1best": "闭",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "闭"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "恢复",
+            "asr_1best": "恢复",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "恢复"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "导航",
+            "asr_1best": "导航",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "导航"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "推荐",
+            "asr_1best": "推荐",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "推荐"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "搜索",
+            "asr_1best": "搜索",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "搜索"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "开启",
+            "asr_1best": "开启",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "开启"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "播放",
+            "asr_1best": "播放",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "播放"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "取消",
+            "asr_1best": "取消",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "取消"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "更换",
+            "asr_1best": "更换",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "更换"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "重新导航",
+            "asr_1best": "重新导航",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "重新导航"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "放大",
+            "asr_1best": "放大",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "放大"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "返回",
+            "asr_1best": "返回",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "返回"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "关了",
+            "asr_1best": "关了",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "关了"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "设置",
+            "asr_1best": "设置",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "设置"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "播报",
+            "asr_1best": "播报",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "播报"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "关闭",
+            "asr_1best": "关闭",
+            "semantic": [
+                [
+                    "inform",
+                    "操作",
+                    "关闭"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "一",
+            "asr_1best": "一",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "一"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "二",
+            "asr_1best": "二",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "二"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "三",
+            "asr_1best": "三",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "三"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "四",
+            "asr_1best": "四",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "四"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "五",
+            "asr_1best": "五",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "五"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "六",
+            "asr_1best": "六",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "六"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "七",
+            "asr_1best": "七",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "七"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "八",
+            "asr_1best": "八",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "八"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "九",
+            "asr_1best": "九",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "九"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "十",
+            "asr_1best": "十",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "十"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第一",
+            "asr_1best": "第一",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第一"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第一个",
+            "asr_1best": "第一个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第一个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第一家",
+            "asr_1best": "第一家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第一家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第一条",
+            "asr_1best": "第一条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第一条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第二",
+            "asr_1best": "第二",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第二"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第二个",
+            "asr_1best": "第二个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第二个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第二家",
+            "asr_1best": "第二家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第二家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第二条",
+            "asr_1best": "第二条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第二条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第三",
+            "asr_1best": "第三",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第三"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第三个",
+            "asr_1best": "第三个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第三个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第三家",
+            "asr_1best": "第三家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第三家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第三条",
+            "asr_1best": "第三条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第三条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第四",
+            "asr_1best": "第四",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第四"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第四个",
+            "asr_1best": "第四个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第四个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第四家",
+            "asr_1best": "第四家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第四家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第四条",
+            "asr_1best": "第四条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第四条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第五",
+            "asr_1best": "第五",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第五"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第五个",
+            "asr_1best": "第五个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第五个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第五家",
+            "asr_1best": "第五家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第五家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第五条",
+            "asr_1best": "第五条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第五条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第六",
+            "asr_1best": "第六",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第六"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第六个",
+            "asr_1best": "第六个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第六个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第六家",
+            "asr_1best": "第六家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第六家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第六条",
+            "asr_1best": "第六条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第六条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第七",
+            "asr_1best": "第七",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第七"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第七个",
+            "asr_1best": "第七个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第七个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第七家",
+            "asr_1best": "第七家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第七家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第七条",
+            "asr_1best": "第七条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第七条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第八",
+            "asr_1best": "第八",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第八"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第八个",
+            "asr_1best": "第八个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第八个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第八家",
+            "asr_1best": "第八家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第八家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第八条",
+            "asr_1best": "第八条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第八条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第九",
+            "asr_1best": "第九",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第九"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第九个",
+            "asr_1best": "第九个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第九个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第九家",
+            "asr_1best": "第九家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第九家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第九条",
+            "asr_1best": "第九条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第九条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第十",
+            "asr_1best": "第十",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第十"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第十个",
+            "asr_1best": "第十个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第十个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第十家",
+            "asr_1best": "第十家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第十家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第十条",
+            "asr_1best": "第十条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第十条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第一",
+            "asr_1best": "倒数第一",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第一"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第一个",
+            "asr_1best": "倒数第一个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第一个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第一家",
+            "asr_1best": "倒数第一家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第一家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第一条",
+            "asr_1best": "倒数第一条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第一条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第二",
+            "asr_1best": "倒数第二",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第二"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第二个",
+            "asr_1best": "倒数第二个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第二个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第二家",
+            "asr_1best": "倒数第二家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第二家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第二条",
+            "asr_1best": "倒数第二条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第二条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第三",
+            "asr_1best": "倒数第三",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第三"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第三个",
+            "asr_1best": "倒数第三个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第三个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第三家",
+            "asr_1best": "倒数第三家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第三家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第三条",
+            "asr_1best": "倒数第三条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第三条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第四",
+            "asr_1best": "倒数第四",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第四"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第四个",
+            "asr_1best": "倒数第四个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第四个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第四家",
+            "asr_1best": "倒数第四家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第四家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第四条",
+            "asr_1best": "倒数第四条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第四条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第五",
+            "asr_1best": "倒数第五",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第五"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第五个",
+            "asr_1best": "倒数第五个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第五个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第五家",
+            "asr_1best": "倒数第五家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第五家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第五条",
+            "asr_1best": "倒数第五条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第五条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第六",
+            "asr_1best": "倒数第六",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第六"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第六个",
+            "asr_1best": "倒数第六个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第六个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第六家",
+            "asr_1best": "倒数第六家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第六家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第六条",
+            "asr_1best": "倒数第六条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第六条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第七",
+            "asr_1best": "倒数第七",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第七"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第七个",
+            "asr_1best": "倒数第七个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第七个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第七家",
+            "asr_1best": "倒数第七家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第七家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第七条",
+            "asr_1best": "倒数第七条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第七条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第八",
+            "asr_1best": "倒数第八",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第八"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第八个",
+            "asr_1best": "倒数第八个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第八个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第八家",
+            "asr_1best": "倒数第八家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第八家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第八条",
+            "asr_1best": "倒数第八条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第八条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第九",
+            "asr_1best": "倒数第九",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第九"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第九个",
+            "asr_1best": "倒数第九个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第九个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第九家",
+            "asr_1best": "倒数第九家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第九家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第九条",
+            "asr_1best": "倒数第九条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第九条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第十",
+            "asr_1best": "倒数第十",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第十"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第十个",
+            "asr_1best": "倒数第十个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第十个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第十家",
+            "asr_1best": "倒数第十家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第十家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "倒数第十条",
+            "asr_1best": "倒数第十条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "倒数第十条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "最后一个",
+            "asr_1best": "最后一个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "最后一个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "最后一家",
+            "asr_1best": "最后一家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "最后一家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "最后一条",
+            "asr_1best": "最后一条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "最后一条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第一",
+            "asr_1best": "第一",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第一"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "二",
+            "asr_1best": "二",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "二"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第三",
+            "asr_1best": "第三",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第三"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第一个",
+            "asr_1best": "第一个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第一个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第四个",
+            "asr_1best": "第四个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第四个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "一",
+            "asr_1best": "一",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "一"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第一家",
+            "asr_1best": "第一家",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第一家"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "三",
+            "asr_1best": "三",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "三"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第二个",
+            "asr_1best": "第二个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第二个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第五个",
+            "asr_1best": "第五个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第五个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "四",
+            "asr_1best": "四",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "四"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第三个",
+            "asr_1best": "第三个",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第三个"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "零二",
+            "asr_1best": "零二",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "零二"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第一条",
+            "asr_1best": "第一条",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第一条"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "第二",
+            "asr_1best": "第二",
+            "semantic": [
+                [
+                    "inform",
+                    "序列号",
+                    "第二"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "上一页",
+            "asr_1best": "上一页",
+            "semantic": [
+                [
+                    "inform",
+                    "页码",
+                    "上一页"
+                ]
+            ]
+        }
+    ],
+    [
+        {
+            "utt_id": 1,
+            "manual_transcript": "下一页",
+            "asr_1best": "下一页",
+            "semantic": [
+                [
+                    "inform",
+                    "页码",
+                    "下一页"
+                ]
+            ]
+        }
+    ]
+]

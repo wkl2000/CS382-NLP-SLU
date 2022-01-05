@@ -1,6 +1,9 @@
 word2vec-768.txt
 log
+ExpLog
 scripts/*.bin
 */__pycache__
 */*.ipynb
 *.ipynb
+results
+*.sh
