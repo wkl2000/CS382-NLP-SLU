@@ -20,6 +20,8 @@
     python scripts/slu_baseline.py --max_epoch 10 --device 3 --trainset_spoken_language_select both --trainset_augmentation   # 同时使用有噪声和无噪声的数据以及 lexicon 增强的数据进行训练
     python scripts/slu_baseline.py --max_epoch 10 --device 3 --trainset_spoken_language_select both --trainset_augmentation --encoder_cell GRU  # 使用 GRU 作为 RNN 的 cell/block
     python scripts/slu_baseline.py --max_epoch 10 --device 3 --trainset_spoken_language_select both --trainset_augmentation --encoder_cell GRU --mlp_num_layers 2   # 设置 MLP 的层数为 2
+    python scripts/slu_baseline.py --max_epoch 50 --early_stop_epoch 10 --device 3 --trainset_spoken_language_select both --trainset_augmentation --encoder_cell GRU --mlp_num_layers 2   # early stop 设置为 10
+    python scripts/slu_baseline.py --max_epoch 50 --early_stop_epoch 10 --device 3 --trainset_spoken_language_select both --trainset_augmentation --encoder_cell GRU --mlp_num_layers 2 --runs 2  # 重复运行 10 次以更好地评估模型
 
 ### 代码说明
 
