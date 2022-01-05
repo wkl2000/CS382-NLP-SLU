@@ -19,7 +19,6 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--testing', action='store_true', help='training or evaluation mode')
 
     arg_parser.add_argument('--results_dir', default='./results', help='path for saving results')
-
     #### Training Hyperparams ####
     arg_parser.add_argument('--batch_size', default=32, type=int, help='Batch size')
     arg_parser.add_argument('--lr', type=float, default=1e-3, help='learning rate')
