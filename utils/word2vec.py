@@ -34,3 +34,4 @@ class Word2vecUtils():
                 word = items[0]
                 vector = np.fromstring(' '.join(items[1:]), dtype=float, sep=' ')
                 self.word2vec[word] = vector
+                
