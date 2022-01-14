@@ -15,7 +15,7 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--dataroot', default='./data', help='root of data')
     arg_parser.add_argument('--word2vec_path', default='./word2vec-768.txt', help='path of word2vector file path')
     # arg_parser.add_argument('--seed', default=2021, type=int, help='Random seed')
-    arg_parser.add_argument('--device', type=int, default=-1, help='Use which device: -1 -> cpu ; the index of gpu o.w.')
+    arg_parser.add_argument('--device', type=int, default=1, help='Use which device: -1 -> cpu ; the index of gpu o.w.')
     arg_parser.add_argument('--testing', action='store_true', help='training or evaluation mode')
 
     arg_parser.add_argument('--results_dir', default='./results', help='path for saving results')
@@ -36,15 +36,21 @@ def add_argument_base(arg_parser):
     arg_parser.add_argument('--trainset_augmentation', action='store_true', help='*used augmented data from lexicon')
     arg_parser.add_argument('--early_stop_epoch', type=int, default=10, help='number of epochs to check early stop(<0 for no early stop)')
 
-    arg_parser.add_argument('--runs', type=int, default=1, help='run multiple times to get more accurate evaluation results')
+    arg_parser.add_argument('--runs', type=int, default=10, help='run multiple times to get more accurate evaluation results')
     
     #### Common Encoder Hyperparams ####
-    arg_parser.add_argument('--encoder_cell', default='LSTM', choices=['LSTM', 'GRU', 'RNN'], help='*root of data')
+    arg_parser.add_argument('--encoder_cell', default='GRU', choices=['LSTM', 'GRU', 'RNN'], help='*root of data')
     arg_parser.add_argument('--dropout', type=float, default=0.2, help='feature dropout rate')
     arg_parser.add_argument('--embed_size', default=768, type=int, help='Size of word embeddings')
     arg_parser.add_argument('--rnn_hidden_size', default=512, type=int, help='hidden size for rnn')
     arg_parser.add_argument('--rnn_num_layers', default=2, type=int, help='number of layer for rnn')
     arg_parser.add_argument('--mlp_hidden_size', default=256, type=int, help='hidden size for mlp')
     arg_parser.add_argument('--mlp_num_layers', default=1, type=int, help='*number of layer for mlp')
-    
+
+    #### Anti noise Hyperparams ####
+    arg_parser.add_argument('--anti_noise', action='store_true', help='whether to denoise when evaluating')
+
+    #### Word vector model Hyperparams ####
+    arg_parser.add_argument('--word_embedding', default='Word2vec', choices=['Word2vec', 'Bert'], help='the method to caculate the word vector')    
+
     return arg_parser
