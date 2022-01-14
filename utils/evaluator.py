@@ -12,6 +12,9 @@ class Evaluator():
     def accuracy(predictions, labels):
         corr, total = 0, 0
         for i, pred in enumerate(predictions):
+            # print ("set(pred) = ", set(pred))
+            # print ("set(labels[i]) = ", set(labels[i]))
+            # print ("set(pred) == set(labels[i]) = ", set(pred) == set(labels[i]) )
             total += 1
             corr += set(pred) == set(labels[i])
         return 100 * corr / total

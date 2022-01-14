@@ -2,18 +2,24 @@ import json
 
 from utils.vocab import Vocab, LabelVocab
 from utils.word2vec import Word2vecUtils
+from utils.bert2vec import BertUtils
 from utils.evaluator import Evaluator
 
 class Example():
 
     @classmethod
     def configuration(cls, vocab_path=None, ontology_path=None, word2vec_path=None, 
-                        spoken_language_select = 'asr_1best'):
+                        spoken_language_select = 'asr_1best', word_embedding = 'Word2vec'):
         cls.evaluator = Evaluator()
         cls.word_vocab = Vocab(padding=True, unk=True, vocab_path=vocab_path,
                                 spoken_language_select=spoken_language_select)
             # load train vocabularies
-        cls.word2vec = Word2vecUtils(word2vec_path)
+
+
+        if word_embedding == 'Word2vec' :
+            cls.word2vec = Word2vecUtils(word2vec_path)  
+        if word_embedding == 'Bert' :
+            cls.word2vec = BertUtils(None)
             # there is 9600 common words with embedding dimension 768
             # head word2vec-768.txt -n 1
         cls.label_vocab = LabelVocab(ontology_path)
