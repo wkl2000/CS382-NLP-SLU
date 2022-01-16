@@ -14,6 +14,8 @@ def add_argument_base(arg_parser):
     #### General configuration ####
     arg_parser.add_argument('--dataroot', default='./data', help='root of data')
     arg_parser.add_argument('--unlabeled_data_path', default='./data/test_unlabelled.json', help='root of the testing unlabeled data')
+    arg_parser.add_argument('--labeled_data_path', default='./data/test.json', help='result of the testing unlabeled data')
+
     arg_parser.add_argument('--word2vec_path', default='./word2vec-768.txt', help='path of word2vector file path')
     # arg_parser.add_argument('--seed', default=2021, type=int, help='Random seed')
     arg_parser.add_argument('--device', type=int, default=0, help='Use which device: -1 -> cpu ; the index of gpu o.w.')
