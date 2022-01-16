@@ -7,3 +7,4 @@ scripts/*.bin
 *.ipynb
 results
 *.sh
+chinese_wwm_ext_pytorch

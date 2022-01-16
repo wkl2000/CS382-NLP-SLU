@@ -3,9 +3,12 @@ import sys, os, time, gc
 from torch.optim import Adam
 from math import sqrt
 import pickle
+from xpinyin import Pinyin
+from datetime import datetime
 
 install_path = os.path.abspath(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(install_path)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 from utils.args import init_args
 from utils.initialization import *
@@ -14,6 +17,13 @@ from utils.batch import from_example_list
 from utils.vocab import PAD
 from model.slu_baseline_tagging import SLUTagging
 from tqdm import tqdm
+
+
+LOG_FOUT = open(os.path.join(BASE_DIR, 'log_train.txt'), 'a')
+
+def log_string(out_str):
+    LOG_FOUT.write(out_str+'\n')
+    LOG_FOUT.flush()
 
 
 def set_optimizer(model, args):
@@ -37,12 +47,77 @@ def decode(model, dataset, device, args):
             labels.extend(label)
             total_loss += loss
             count += 1
+        if args.anti_noise == True:
+            predictions = anti_noise_prediction(predictions)
         metrics = Example.evaluator.acc(predictions, labels)
     # torch.cuda.empty_cache()
         # RuntimeError: CUDA error: out of memory
         # CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
     gc.collect()
     return metrics, total_loss / count
+
+def anti_noise_prediction(predictions):
+    p = Pinyin()
+    select_pos_set = {'poi名称', 'poi修饰', 'poi目标', '起点名称', '起点修饰', '起点目标', '终点名称', '终点修饰', '终点目标', '途经点名称'}
+    select_others_set = {'请求类型': [Example.label_vocab.request_map_dic, Example.label_vocab.request_pinyin_set], \
+        '出行方式' : [Example.label_vocab.travel_map_dic, Example.label_vocab.travel_pinyin_set], \
+        '路线偏好' : [Example.label_vocab.route_map_dic, Example.label_vocab.route_pinyin_set], \
+        '对象' :  [Example.label_vocab.object_map_dic, Example.label_vocab.object_pinyin_set], \
+        '页码' : [Example.label_vocab.page_map_dic, Example.label_vocab.page_pinyin_set], \
+        '操作' : [Example.label_vocab.opera_map_dic, Example.label_vocab.opera_pinyin_set], \
+        '序列号' : [Example.label_vocab.ordinal_map_dic, Example.label_vocab.ordinal_pinyin_set]   }
+
+    modify_num = 0
+    for i, pred in enumerate(predictions):
+        pred_length = len(pred)
+        if pred_length > 0 :
+            for j in range(pred_length):
+                tmp_pred = pred[j]
+                split_result = tmp_pred.split('-')
+                tmp_pinyin = p.get_pinyin(split_result[2], ' ')
+                if split_result[1] != 'value' :
+                    if split_result[1] in select_pos_set :
+                        map_dic, pinyin_set = Example.label_vocab.poi_map_dic, Example.label_vocab.poi_pinyin_set
+                    else :
+                        [map_dic, pinyin_set] = select_others_set[split_result[1]]
+
+                    standard_output = get_standard_output (map_dic, pinyin_set, tmp_pinyin)
+                    modify_pred = split_result[0] + '-' + split_result[1] + '-' + standard_output
+                    if standard_output != split_result[2] :
+                        modify_num += 1
+                    print ("standard_output = ", standard_output, " split_result[2] = ", split_result[2])
+                    # print ("modify_pred = ", modify_pred, " predictions[i][j] = ", predictions[i][j])
+                    predictions[i][j] = modify_pred
+    print ("modify_num == ", modify_num)                    
+    return  predictions            
+
+def get_standard_output (map_dic, pinyin_set, tmp_pinyin) :
+    if tmp_pinyin in pinyin_set :
+        standard_output = map_dic[tmp_pinyin]
+    else :
+        max_similarity = 0
+        most_similar_pinyin = ''
+        for standard_pinyin in iter(pinyin_set) :
+            similarity = get_pinyin_similarity(standard_pinyin, tmp_pinyin)
+            if similarity > max_similarity :
+                max_similarity = similarity
+                most_similar_pinyin = standard_pinyin
+        if max_similarity == 0 : 
+            standard_output = '无'
+        else :
+            standard_output = map_dic[most_similar_pinyin]
+    return standard_output
+            
+
+def get_pinyin_similarity(standard_pinyin, tmp_pinyin) :
+    standard_set = set (standard_pinyin.split(' '))
+    tmp_set = set (tmp_pinyin.split(' '))
+
+    inter_set = standard_set & tmp_set
+    similarity = len (inter_set) / (len (standard_set) + len (tmp_set) )
+    return similarity
+
+
 
 def evaluate(model, dataset, device, args):
     # start_time = time.time()
@@ -174,7 +249,8 @@ def preperation(args):
     Example.configuration(  vocab_path=train_path, 
                             ontology_path=ontology_path, 
                             word2vec_path=word2vec_path,
-                            spoken_language_select=args.trainset_spoken_language_select)
+                            spoken_language_select=args.trainset_spoken_language_select,
+                            word_embedding = args.word_embedding)
     
     # load dataset and preprocessing
     # train_dataset = Example.load_dataset(train_path)
@@ -212,6 +288,21 @@ if __name__ == "__main__":
         SEEDs = [30910376, 21911048, 21911033, 2022, 2021, 2020, 2019, 2018, 1896, 200240]
         
         # get model results
+        log_string ("---" * 10)
+        log_string(str(datetime.now()))
+
+        if args.trainset_augmentation != True :
+            args.trainset_augmentation = False
+        if args.anti_noise != True :
+            args.anti_noise = False
+        if args.trainset_spoken_language_select != 'asr_1best' and args.trainset_spoken_language_select != 'manual_transcript' :
+            args.trainset_spoken_language_select = 'both'
+
+        args_string = 'Enco_cell =  ' + args.encoder_cell + '  mlp_num =  ' + str (args.mlp_num_layers) + '  Aug =  ' + str(args.trainset_augmentation) + '  trainset = ' \
+            + args.trainset_spoken_language_select + '  anti =  ' + str (args.anti_noise) + '  word_embedding =  ' + args.word_embedding + '  runs =  ' + str(args.runs) \
+                + ' early_stop = ' + str (args.early_stop_epoch)
+        log_string (args_string)
+
         results = []
         for run_i in range(args.runs):
             args.seed = SEEDs[run_i]
@@ -233,11 +324,29 @@ if __name__ == "__main__":
         # print accuracy results
         print(f"========== {config_str} ==========")
         dev_acc_results = [result["acc"] for result in results]
-        print(f"DEV ACC = {dev_acc_results}")
+        dev_fscore_results = [result["fscore"]['fscore'] for result in results]
+        avg_fscore = sum(dev_fscore_results) / len(dev_fscore_results)
+
+        dev_precision_results = [result["fscore"]['precision'] for result in results]
+        avg_precision = sum(dev_precision_results) / len(dev_precision_results)
+
+        dev_recall_results = [result["fscore"]['recall'] for result in results]
+        avg_recall = sum(dev_recall_results) / len(dev_recall_results)        
+
         avg = sum(dev_acc_results) / len(dev_acc_results)
         std = sqrt(sum([(r-avg)**2 for r in dev_acc_results]) / len(dev_acc_results))
+
+        print(f"MEAN DEV FSCORE = {avg_fscore}")
+        print(f"MEAN DEV PRECISION = {avg_precision}")
+        print(f"MEAN DEV RECALL = {avg_recall}")
+        print(f"DEV ACC = {dev_acc_results}")
         print(f"DEV ACC = {avg} ± {std}")
         print(f"========== {config_str} ==========\n")
+
+        result_str = ("AVG DEV ACC : %f, STD DEV ACC : %f, MEAN DEV PRECISION : %f, MEAN DEV RECALL : %f, MEAN DEV FSCORE : %f " % (avg, std, avg_precision, avg_recall, avg_fscore))
+        log_string (result_str)
+        log_string ("---" * 10 + '\n')
+
 
     else:
         model = SLUTagging(args).to(device)

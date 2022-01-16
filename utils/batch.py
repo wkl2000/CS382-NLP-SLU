@@ -35,7 +35,7 @@ class Batch():
 
     def __init__(self, examples, device):
         super(Batch, self).__init__()
-
+        
         self.examples = examples
         self.device = device
 
