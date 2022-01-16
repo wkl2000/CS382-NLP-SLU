@@ -23,11 +23,6 @@ from model.slu_baseline_tagging import SLUTagging
 from tqdm import tqdm
 
 
-LOG_FOUT = open(os.path.join(BASE_DIR, 'log_train.txt'), 'a')
-
-def log_string(out_str):
-    LOG_FOUT.write(out_str+'\n')
-    LOG_FOUT.flush()
 
 
 def set_optimizer(model, args):
@@ -190,7 +185,7 @@ if __name__ == "__main__":
     checkpoint = torch.load(args.best_model_dir)
     model.load_state_dict(checkpoint['model'])
     
-    print("Devset Evaluation", end="\n\t")
+    print("Devset Evaluation : ", end="\n\t")
     dev_loss, dev_acc, dev_fscore = evaluate(model, dev_dataset, device, args)
 
     # 下面开始计算在./data/test_unlabelled.json上进行inference的结果
@@ -219,16 +214,17 @@ if __name__ == "__main__":
     gc.collect()
     # print(predictions)
 
-    # 下面把predictions对应地填回到test_unlabelled中
+    test_labelled = test_unlabelled
+    # 下面把predictions对应地填回到test_labelled中
     i=0
     for j,group in enumerate(test_unlabelled):
         for k,each in enumerate(group): # 对应每一句话
             # print(each["asr_1best"],predictions[i])
             for slot_str in predictions[i]:
-               test_unlabelled[j][k]["pred"].append(slot_str.split('-'))
+               test_labelled[j][k]["pred"].append(slot_str.split('-'))
             i+=1
 
-with open(args.unlabeled_data_path, 'w',encoding="utf-8") as load_f:
-        json.dump(test_unlabelled,load_f,indent=4,ensure_ascii=False)
-print(f"对{args.unlabeled_data_path}的预测结果已经保存到{args.unlabeled_data_path}中")
+with open(args.labeled_data_path, 'w',encoding="utf-8") as load_f:
+        json.dump(test_labelled,load_f,indent=4,ensure_ascii=False)
+print(f"对{args.unlabeled_data_path}的预测结果已经保存到{args.labeled_data_path}中")
 

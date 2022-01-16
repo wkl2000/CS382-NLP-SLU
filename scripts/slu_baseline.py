@@ -85,8 +85,7 @@ def anti_noise_prediction(predictions):
                     modify_pred = split_result[0] + '-' + split_result[1] + '-' + standard_output
                     if standard_output != split_result[2] :
                         modify_num += 1
-                    # print ("standard_output = ", standard_output, " split_result[2] = ", split_result[2])
-
+                    print ("standard_output = ", standard_output, " split_result[2] = ", split_result[2])
                     # print ("modify_pred = ", modify_pred, " predictions[i][j] = ", predictions[i][j])
                     predictions[i][j] = modify_pred
     print ("modify_num == ", modify_num)                    
@@ -300,7 +299,8 @@ if __name__ == "__main__":
             args.trainset_spoken_language_select = 'both'
 
         args_string = 'Enco_cell =  ' + args.encoder_cell + '  mlp_num =  ' + str (args.mlp_num_layers) + '  Aug =  ' + str(args.trainset_augmentation) + '  trainset = ' \
-            + args.trainset_spoken_language_select + '  anti =  ' + str (args.anti_noise) + '  word_embedding =  ' + args.word_embedding + '  runs =  ' + str(args.runs) 
+            + args.trainset_spoken_language_select + '  anti =  ' + str (args.anti_noise) + '  word_embedding =  ' + args.word_embedding + '  runs =  ' + str(args.runs) \
+                + ' early_stop = ' + str (args.early_stop_epoch)
         log_string (args_string)
 
         results = []
