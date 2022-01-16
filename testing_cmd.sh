@@ -1,0 +1,2 @@
+python scripts/test.py --encoder_cell GRU --mlp_num_layers 1 --trainset_augmentation     --trainset_spoken_language_select manual_transcript --anti_noise \
+    --word_embedding Bert --unlabeled_data_path=./data/test_unlabelled.json --labeled_data_path=./data/test.json --best_model_dir ./scripts/best_model.bin
