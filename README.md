@@ -9,6 +9,8 @@
 conda create -n slu python=3.6
 source activate slu
 pip install torch==1.7.1
+pip install  -i https://pypi.tuna.tsinghua.edu.cn/simple transformers==3.4.0
+pip install xpinyin
 ```
 
 ### 运行
@@ -37,13 +39,24 @@ python scripts/slu_baseline.py --max_epoch 50 --early_stop_epoch 10 --device 3 -
   ```
 
   其中，`<arg>`为要修改的参数名，`<value>`为修改后的值
+  
 + `utils/initialization.py`:初始化系统设置，包括设置随机种子和显卡/CPU
+
 + `utils/vocab.py`:构建编码输入输出的词表
-+ `utils/word2vec.py`:读取词向量
+
++ `utils/word2vec.py`:读取Word2vec词向量
+
++ `utils/bert2vec.py`:由bert预训练模型得到词向量
+
 + `utils/example.py`:读取数据
+
 + `utils/batch.py`:将数据以批为单位转化为输入
+
 + `model/slu_baseline_tagging.py`:baseline模型
+
 + `scripts/slu_baseline.py`:主程序脚本
+
++ `chinese_wwm_ext_pytorch`:使用的bert预训练模型，来源：https://github.com/ymcui/Chinese-BERT-wwm
 
 ### 有关预训练语言模型
 
