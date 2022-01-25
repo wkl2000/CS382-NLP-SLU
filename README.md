@@ -1,7 +1,7 @@
 # SJTU CS382 SLU
 
 本项目为上海交通大学 CS382 NLP 课程的课程大作业三：口语语义理解任务(SLU)
-本小组成员为：张泽熙、丁立、吴凯龙
+本小组成员为：Zexi Zhang, Li Ding, Kailong Wu
 
 ### 创建环境
 
